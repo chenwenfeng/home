@@ -1,0 +1,16 @@
+body {
+  width: 100%;
+  min-height: 1000px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999), to(#333))
+}
+
+h1 {
+  font-size: 60px;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #EEE 16px -7px 10px;
+  text-shadow: -1px 2px 3px #ffb69a;
+  text-shadow: 0px -1px #333, 0 1px white;
+  color: #E3E1E1;
+}
