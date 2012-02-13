@@ -2,11 +2,31 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" media="screen" href="index.css">
+    <link rel="stylesheet" media="screen" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="video-js/video-js.css" >
+    <link rel="stylesheet" media="screen" href="site.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="video-js/video.js"></script>
   </head>
   <body>
-    <h1>Welcome to wenfeng's site!</h1>
+    <div id="body">
+      <nav id="navbar">
+        <div id="logo">
+          <div class="left logo-part">W</div>
+          <div class="right logo-part">F</div>
+        </div>
+        <div class="nav nav-cool-show">SHOW</div>
+        <div class="nav nav-cool-show">BLOG</div>
+        <div class="nav nav-cool-show">ABOUT</div>
+        <div class="nav nav-cool-show">WISH</div>
+      </nav>
+      <h1>Welcome to wenfeng's site!</h1>
+      <video id="bg-video" autoplay class="video-js vjs-default-skin" controls preload width="640" height="264"
+        poster="http://video-js.zencoder.com/oceans-clip.png"
+        data-setup="{}">>
+        <source type="video/webm" src="http://cdnapi.kaltura.com/p/243342/sp/24334200/playManifest/entryId/0_ntovmku5/flavorId/0_yiep8zj7/format/url/protocol/http/a.webm?ks=MTRiMDg0ZGI2ZGRiYjgyZjY2Y2RkZDVkNDEzZDY1MDZkOGYwY2M5MHwyNDMzNDI7MjQzMzQyOzEzMjg5NjExMjk7MDsxMzI4ODc0NzI5LjAwMjM7MDt2aWV3Oio7Ow==&amp;referrer=aHR0cDovL2h0bWw1dmlkZW8ub3JnLw==" data-flavorid="webm" data-bandwidth="8968">
+      </video>
+    </div>
   <body>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="site.js"></script>
 </html>
