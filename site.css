@@ -26,7 +26,8 @@ body {
   margin: 0 30px;
   color: #444;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 30px;
+  -webkit-transition: all .5s ease-in-out;
 }
 
 .nav:hover {
@@ -35,18 +36,19 @@ body {
 }
 
 #logo {
-  width: 100px;
+  width: 150px;
   -webkit-box-flex: 0;
   display: -webkit-box;
   text-shadow: #EEE 3px -1px 4px;
   -webkit-transition: all .25s ease-in-out;
   border: 10px solid transparent;
+  border-radius: 30px;
 }
 
 #logo .logo-part {
   -webkit-box-flex: 1;
-  height: 30px;
   color: #FFF;
+  line-height: 50px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -64,6 +66,7 @@ body {
 
 #logo:hover .right {
   background: #999;
+  border-radius: 0 30px 30px 0;
 }
 
 #bg-video {
