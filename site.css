@@ -5,14 +5,16 @@ body {
   font-family: helvetica,arial,sans-serif;
 }
 
+
+
 #body {
   width: 980px;
   margin: auto;
 }
 
 #navbar {
-  height: 40px;
-  line-height: 40px;
+  height: 60px;
+  line-height: 60px;
   display: -webkit-box;
 }
 .nav {
@@ -34,8 +36,11 @@ body {
 
 #logo {
   width: 100px;
-  -webkit-box-flex: 1;
+  -webkit-box-flex: 0;
   display: -webkit-box;
+  text-shadow: #EEE 3px -1px 4px;
+  -webkit-transition: all .25s ease-in-out;
+  border: 10px solid transparent;
 }
 
 #logo .logo-part {
@@ -44,17 +49,20 @@ body {
   color: #FFF;
   font-size: 30px;
   font-weight: bold;
-  border: 10px solid #444;
   text-align: center;
 }
 
-#logo .left {
-  background: #444;
-  -webkit-transform: skew(-5deg);
-  -webkit-transform: rotate(12deg);
+#logo:hover {
+  border: 10px solid #444;
+  font-size: 40px;
+  text-shadow: none;
 }
 
-#logo .right {
+#logo:hover .left {
+  background: #444;
+}
+
+#logo:hover .right {
   background: #999;
 }
 
