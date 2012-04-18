@@ -2,7 +2,7 @@ body {
   width: 100%;
   min-height: 1000px;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999), to(#333));
-  font-family: helvetica,arial,sans-serif;
+  font-family: brandon-grotesque, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 
@@ -51,7 +51,7 @@ body {
   top: -10px;
 }
 
-#logo .ball {
+/*#logo .ball {
   background-color: rgba(0,0,0,0);
   border:5px solid rgba(0,183,229,0.9);
   opacity:.9;
@@ -120,6 +120,49 @@ body {
 @-webkit-keyframes spinoff {
   0% { -webkit-transform:rotate(0deg); }
   100% { -webkit-transform:rotate(-360deg); }
+}*/
+
+#clock {
+  position: relative;
+  width: 378px;
+  height: 378px;
+  background-image: url('../images/clockFace.png');
+  left: 50%;
+  margin: 5em 0 0 -189px;
+  -webkit-box-flex: 0;
+}
+
+#clock div {
+  position: absolute;
+}
+
+#clock img[src*='hour'] {
+-webkit-transform: rotate(90deg);
+}
+
+#clock img[src*='second'] {
+/* -webkit-transition: property duration timing-function */
+-webkit-transition: -webkit-transform 60s linear;
+}
+
+#clock:target img[src*='second'] {
+-webkit-transform: rotate(360deg);
+}
+
+#clock img[src*='second'] {
+-webkit-transition: -webkit-transform 600000s linear;
+}
+
+#clock:target img[src*='second'] {
+-webkit-transform: rotate(3600000deg);
+}
+
+#clock img[src*='minute'] {
+-webkit-transition: -webkit-transform 360000s linear;
+}
+
+#clock:target img[src*='minute'] {
+-webkit-transform: rotate(36000deg);
 }
 
 .header-line {
@@ -144,4 +187,51 @@ h1 {
   text-align: center;
   text-shadow: -1px 2px 3px #FFF;
   color: #E3E1E1;
+}
+
+#content {
+  -webkit-perspective: 800;
+  -webkit-perspective-origin: 50% 200px;
+}
+#cube {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  -webkit-transition: -webkit-transform 2s linear;
+  -webkit-transform-style: preserve-3d;
+}
+
+.face {
+  background: #000;
+  /*opacity: 0.5;*/
+  position: absolute;
+  height: 360px;
+  width: 360px;
+  padding: 20px;
+}
+
+#cube .one  {
+  -webkit-transform: rotateX(90deg) translateZ(200px);
+}
+
+#cube .two {
+  -webkit-transform: translateZ(200px);
+}
+
+#cube .three {
+  -webkit-transform: rotateY(90deg) translateZ(200px);
+}
+
+#cube .four {
+  -webkit-transform: rotateY(180deg) translateZ(200px);
+}
+
+#cube .five {
+  -webkit-transform: rotateY(-90deg) translateZ(200px);
+}
+
+#cube .six {
+  -webkit-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
 }
