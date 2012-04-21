@@ -10,62 +10,39 @@
   </head>
   <body>
     <div id="body">
-      <header>
+      <header id="header">
         <nav id="navbar">
-          <a id="logo" href="/">
-            <div class="ball"></div>
-            <div class="ball2"></div>
-            <div class="ball3"></div>
-          </a>
           <div class="nav nav-cool-show">SHOW</div>
           <div class="nav nav-cool-show">BLOG</div>
           <div class="nav nav-cool-show">ABOUT</div>
-          <div class="nav nav-cool-show">TODO1</div>
-          <div class="nav nav-cool-show">TODO2</div>
-          <div class="nav nav-cool-show">TODO3</div>
-          <div id="clock">
-            <div id="hour"><img src="images/hourHand.png" /></div>
-            <div id="minute"><img src="images/minuteHand.png" /></div>
-            <div id="second"><img src="images/secondHand.png" /></div>
-          </div>
+          <div class="nav nav-cool-show">TODO</div>
         </nav>
       </header>
 
       <div class="header-line"></div>
       
       <div id="content">
-
-        <div id="cube"> 
-          <div id="content-show" class="face one">
+        <div id="slide-show">
+          <div id="content-show" class="slide">
             <h1>SHOW</h1>
-            <video id="bg-video" autoplay class="video-js vjs-default-skin" controls preload width="360" height="264"
-              poster="http://video-js.zencoder.com/oceans-clip.png"
-              data-setup="{}">>
+            <video id="video" class="video-js vjs-default-skin" controls preload width="360" height="264"
+              poster="http://video-js.zencoder.com/oceans-clip.png">
               <source type="video/webm" src="http://www.double.co.nz/video_test/transformers480.ogg">
             </video>
-          </div>
+          </div><!--
 
-          <div id="content-blog" class="face two">
+       --><div id="content-blog" class="slide">
             <h1>BLOG</h1>
-          </div>
+          </div><!--
 
-          <div id="content-about" class="face three">
+       --><div id="content-about" class="slide">
             <h1>ABOUT</h1>
-          </div>
+          </div><!--
 
-          <div id="content-todo1" class="face four">
-            <h1>TODO1</h1>
-          </div>
-
-          <div id="content-todo2" class="face five">
-            <h1>TODO2</h1>
-          </div>
-
-          <div id="content-todo3" class="face six">
-            <h1>TODO3</h1>
+       --><div id="content-todo" class="slide">
+            <h1>TODO</h1>
           </div>
         </div>
-
       </div>
 
       <footer>
